@@ -1,0 +1,80 @@
+.flexContenedorTitulo{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: #877d62;
+}
+
+.flexContenedor{
+    display: flex;   
+    width: 100%;
+    justify-content: center;
+    color: #877d62;
+}
+
+.gridContenedor{
+    display: grid;
+    grid-template-areas: 'content1 content2 content2 content3'
+                         'content1 content4 content4 content3';
+    grid-template-columns: 200px auto auto 300px;
+    grid-template-rows: 200px 200px;
+    margin: 20px;
+}
+body{
+
+    background-image: url("../recursos/imagenes/OIP\ \(2\).jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed
+
+}
+
+.content1{
+    grid-area: content1;
+    border: 1px solid black;
+    background-color: #643e7e;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.content2{
+    grid-area: content2;
+    border: 1px solid black;
+    background-color: #313131;
+    color: #fdfbfe;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.content3{
+    grid-area: content3;
+    border: 1px solid black;
+}
+.content4{
+    grid-area: content4;
+    border: 1px solid black;
+    background-color: #fdfbfe;
+}
+.gridContenedor2{
+    display: grid;
+    grid-template-areas: 'imagen1 imagen2 imagen3'
+                         'imagen1 imagen4 imagen4';
+    
+    grid-template-columns: 220px 140px 140px;
+    grid-template-rows: auto auto;
+    gap: 1px;
+    margin: 10px;
+    margin-left: 20px;
+}
+.imagen1{
+    grid-area: imagen1;
+    border: 1px solid black;
+}
+.imagen2{
+    grid-area: imagen2;
+    border: 1px solid black;
+}
+.imagen3{
+    grid-area: imagen3;
+    border: 1px solid black;
+}
+.imagen4{
+    grid-area: imagen4;
+}
